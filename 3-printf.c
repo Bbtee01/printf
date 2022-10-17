@@ -57,7 +57,7 @@ int print_string(va_list ap, params_t *params)
 	switch ((int)(!str))
 		case 1:
 			str = NULL_STRING;
-			
+
 	j = pad = _strlen(str);
 	if (params->precision < pad)
 		j = pad = params->precision;
@@ -71,7 +71,7 @@ int print_string(va_list ap, params_t *params)
 			sum += _puts(str);
 	}
 	while (j++ < params->width)
-		sun +=  _putchar(pad_char);
+		sum += _putchar(pad_char);
 	if (!params->minus_flag)
 	{
 		if (params->precision != UINT_MAX)
@@ -104,6 +104,7 @@ int print_percent(va_list ap, params_t *params)
  *
  * Return: number chars printed
  */
+
 int print_S(va_list ap, params_t *params)
 {
 	char *str = va_arg(ap, char *);
