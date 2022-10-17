@@ -57,7 +57,7 @@ typedef struct parameters
 
 /**
  * struct specifier - Struct token
- * 
+ *
  * @specifier: format token
  * @f: The function associated
  */
@@ -114,7 +114,7 @@ void init_params(params_t *params, va_list ap);
 /* string_fields.c modoule */
 char *get_precision(char *p, params_t *params, va_list ap);
 
-/* _printf.c module */
+/* _prinf.c module */
 int _printf(const char *format, ...);
 
 #endif /*_MAIN_H_*/
